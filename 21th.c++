@@ -28,9 +28,7 @@ int main(){
      cout<<"Enter the quantity"<<endl; 
    cin>>q;
     switch(choice){
-        
-        
-   
+           
         case 101:
          total=250*q;
          cout<<"Your Total Bill is: "<<total<<endl;

@@ -1,46 +1,53 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int p=0;
-    int l=0;
-    int a=0;
-    char n;
 
-    cout<<"==============================================\n";
-    cout<<"               TODAYS ATTENDANCE              \n";
-    cout<<"==============================================\n";
-    for(int i=1;i<=20;i++){
-        cout<<"           Mark student's attendence\n          (A for absent , P for present and L for leave) \n          Roll no.      :      "<<i<<endl;
-        cin>>n;
-        if(n=='p'|| n=='P'){
-            cout<<"==============================================\n";
-            cout<<"              ☺️☺️ Marked As Present ☺️☺️"<<endl;
-            cout<<"==============================================\n";
-            p++;
-        }
+    struct Address{
+        string l;
+        int p;
+        string c;
+        string s;
+        int h;
+    
+    
+    };
+    struct Patient{
+        int id;
+        string name;
+        string dis; 
+      
+        int age;
+        Address add;
 
-        else if(n=='a'||n=='A'){
-            cout<<"==============================================\n";
-                cout<<"              😔😔 Marked As Absent 😔😔"<<endl;
-                cout<<"==============================================\n";
-                a++;
-            }
-        else if(n=='l'||n=='L'){
-                cout<<"==============================================\n";
-               cout<<"                  😑😑 Marked As Leave 😑😑"<<endl;
-               cout<<"==============================================\n";
-               l++;
-            }
+    };
+    int main(){
+        Patient p1;
+
+        p1.add.h=1234;
+        p1.add.l="solan";
+        p1.add.c="shimla";
+        p1.add.s="Himachal Pradesh";
+        p1.add.p=123;
+
         
-        else{
+        p1.id=101;
+        p1.name="Parul";
+        p1.age=20;
+        p1.dis="love";
+        cout<<"==========================================="<<endl;
+        cout<<"           Personal Details"<<endl;
+        cout<<"==========================================="<<endl<<endl;
+        cout<<" * The Id of Patient is         :    " <<p1.id<<" 😁😁 "<<endl;
+        cout<<" * The Name of Patient is       :    " <<p1.name<<" 😁😁 "<<endl;
+        cout<<" * The Age of Patient is        :    " <<p1.age<<" 😁😁 "<<endl;
+        cout<<" * The dis of Patient is        :    " <<p1.dis<<" 😁😁 "<<endl<<endl<<endl;
 
-             cout<<"          ♨️♨️Invalid Input RE-ENTER IT♨️♨️ :  ";
-             i--;
-            continue;
-        }
-    }
-    cout<<"        # Total Students Are Present   :     "<<p<<endl;
-    cout<<"        # Total Students Are Absent    :     "<<a<<endl;
-    cout<<"        # Total Students Are On Leave  :     "<<l<<endl;
-    return 0;
+            cout<<"==========================================="<<endl;
+            cout<<"            Address Details"<<endl;  
+            cout<<"==========================================="<<endl<<endl;
+
+        cout<<" * The House number of Patient is       :    " <<p1.add.h<<" 😁😁 "<<endl;
+        cout<<" * The  Locality of Patient is          :    " <<p1.add.l<<" 😁😁 "<<endl;
+        cout<<" * The City of Patient is               :    " <<p1.add.c<<" 😁😁 "<<endl;
+        cout<<" * The State of Patient is              :    " <<p1.add.s<<" 😁😁 "<<endl;
+        cout<<" * The PIN Code of Patient is           :    " <<p1.add.p<<" 😁😁 "<<endl;
 }
