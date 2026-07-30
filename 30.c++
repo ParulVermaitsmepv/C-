@@ -50,4 +50,5 @@ using namespace std;
         cout<<" * The City of Patient is               :    " <<p1.add.c<<" 😁😁 "<<endl;
         cout<<" * The State of Patient is              :    " <<p1.add.s<<" 😁😁 "<<endl;
         cout<<" * The PIN Code of Patient is           :    " <<p1.add.p<<" 😁😁 "<<endl;
+        return 0;
 }

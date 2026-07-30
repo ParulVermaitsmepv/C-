@@ -1,53 +1,36 @@
 #include<iostream>
 using namespace std;
-
-    struct Address{
-        string l;
-        int p;
-        string c;
-        string s;
-        int h;
-    
-    
-    };
-    struct Patient{
-        int id;
-        string name;
-        string dis; 
-      
-        int age;
-        Address add;
-
-    };
-    int main(){
-        Patient p1;
-
-        p1.add.h=1234;
-        p1.add.l="solan";
-        p1.add.c="shimla";
-        p1.add.s="Himachal Pradesh";
-        p1.add.p=123;
-
+int bts(int b,int c,int d,int a,int e);
+int main(){
+    int s;
+    for ( int i=1;i<=10;i++){
+        cout<<"Enter the data of the Roll Number  :  "<<i<<endl;
+        bts(0,0,0,0,0);
         
-        p1.id=101;
-        p1.name="Parul";
-        p1.age=20;
-        p1.dis="love";
-        cout<<"==========================================="<<endl;
-        cout<<"           Personal Details"<<endl;
-        cout<<"==========================================="<<endl<<endl;
-        cout<<" * The Id of Patient is         :    " <<p1.id<<" 😁😁 "<<endl;
-        cout<<" * The Name of Patient is       :    " <<p1.name<<" 😁😁 "<<endl;
-        cout<<" * The Age of Patient is        :    " <<p1.age<<" 😁😁 "<<endl;
-        cout<<" * The dis of Patient is        :    " <<p1.dis<<" 😁😁 "<<endl<<endl<<endl;
+    }
 
-            cout<<"==========================================="<<endl;
-            cout<<"            Address Details"<<endl;  
-            cout<<"==========================================="<<endl<<endl;
+    return 0;
+}
+int bts(int a,int b,int c,int d,int e){
+    cout<<"=========================================================\n";
+    cout<<"      Enter the marks                            MARKS\n";
+    cout<<"=========================================================\n";
 
-        cout<<" * The House number of Patient is       :    " <<p1.add.h<<" 😁😁 "<<endl;
-        cout<<" * The  Locality of Patient is          :    " <<p1.add.l<<" 😁😁 "<<endl;
-        cout<<" * The City of Patient is               :    " <<p1.add.c<<" 😁😁 "<<endl;
-        cout<<" * The State of Patient is              :    " <<p1.add.s<<" 😁😁 "<<endl;
-        cout<<" * The PIN Code of Patient is           :    " <<p1.add.p<<" 😁😁 "<<endl;
+    cout<<"\n        #Enter the marks of sub 1        :       ";
+    cin>>a;
+    cout<<"\n        #Enter the marks of sub 2        :       ";
+    cin>>b;
+    cout<<"\n        #Enter the marks of sub 3        :       ";
+    cin>>c;
+    cout<<"\n        #Enter the marks of sub 4        :       ";
+    cin>>d;
+    cout<<"\n        #Enter the marks of sub 5        :       ";
+    cin>>e;
+
+    int sum=a+b+c+d+e;
+    int result=(sum*100)/500;
+    cout<<"\n\n\n=========================================================\n";
+    cout<<"                The presentage of student is: "<<result<<endl;
+    cout<<"=========================================================\n\n\n\n\n";
+    return result;
 }
