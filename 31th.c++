@@ -2,7 +2,7 @@
 using namespace std;
 void fun(int ,int,string);
 int main(){
-    fun();
+    fun(10,20,"BTS");
     cout<<"          WELCOME IN THE PURPLE OCEAN"<<endl;
 return 0;
 }

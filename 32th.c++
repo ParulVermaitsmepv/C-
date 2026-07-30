@@ -1,16 +1,12 @@
 #include<iostream>
 using namespace std;
-struct home{
-    string name;
-    string cl;
-    int age;
-    int op;
-}
-struct play{
-    int lay;
-    int id;
-    home h;
-}
+void sum(int p=10,int v=10);
 int main(){
+    sum();
+  
+}
+void sum(int p,int v){
+    int fun =p+v;
+    cout<<"sum= "<<fun;
     
 }
