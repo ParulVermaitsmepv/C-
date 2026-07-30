@@ -4,7 +4,9 @@ int bts(int b,int c,int d,int a,int e);
 int main(){
     int s;
     for ( int i=1;i<=10;i++){
-        cout<<"Enter the data of the Roll Number  :  "<<i<<endl;
+        cout<<"=========================================================\n";
+        cout<<"Enter the data of the Roll Number  :  "<<i;
+        cout<<"=========================================================\n\n\n";
         bts(0,0,0,0,0);
         
     }
