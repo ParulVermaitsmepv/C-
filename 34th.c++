@@ -3,7 +3,7 @@ using namespace std;
 int bts(int a,int b,int c ,int d, int e);
 int main(){
     int pre[10];
-    for(int i=1;i<=2;i++){
+    for(int i=1;i<=10;i++){
         cout<<"Enter the Data of Roll no.     :      "<<i<<endl;
         pre[i-1]= bts(0,0,0,0,0);
         cout<<"======================================================================================================\n";
