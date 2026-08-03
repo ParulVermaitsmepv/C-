@@ -10,6 +10,7 @@ int main()
         cout << "=========================================================\n";
         cout << "     Enter the data of the Roll Number : " << i;
         cout << "\n=========================================================\n\n\n";
+        
 
         pre[i - 1] = bts(0, 0, 0, 0, 0);
 
@@ -31,21 +32,7 @@ int main()
     return 0;
 }
 int bts(int a,int b,int c,int d,int e){
-    cout<<"=========================================================\n";
-    cout<<"      Enter the marks                            MARKS\n";
-    cout<<"=========================================================\n";
-
-    cout<<"        #Enter the marks of sub 1        :       ";
-    cin>>a;
-  
-    cout<<"        #Enter the marks of sub 2        :       ";
-    cin>>b;
-    cout<<"        #Enter the marks of sub 3        :       ";
-    cin>>c;
-    cout<<"        #Enter the marks of sub 4        :       ";
-    cin>>d;
-    cout<<"        #Enter the marks of sub 5        :       ";
-    cin>>e;
+   
 
     int sum=a+b+c+d+e;
     int result=(sum*100)/500;
