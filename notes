@@ -1,0 +1,6 @@
+constructer is a member of class the name of constructer as the same as a class   
+it have no return type so cant use return statement 
+it must be an instance member function  and can never be static 
+constructer is implicilty called when object is created 
+constructer is used to solve the problem of ini
+constructer makes an object to object 

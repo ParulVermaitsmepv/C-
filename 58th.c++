@@ -23,7 +23,7 @@ class emp{
 int main(){
     emp s[10];
     int n;
-    cout<<"Enter the total number of Emploies";
+    cout<<"Enter the total number of Emploies :  ";
     cin>>n;
     for(int i=0;i<n;i++)
     {
