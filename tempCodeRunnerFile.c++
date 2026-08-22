@@ -1,21 +1,36 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-class student {
-    private:
-    static int count;
-
+class tae{
+    int a,b;
     public:
-    student (){
-        count++;
+    tae(int x,int y){
+      
+        a=x;
+        b=y;
+
+
     }
-    static void disp(){
-        cout<<"value of count is  :  "<<count;
+    void dis(){
+        cout<<a<<b;
     }
 };
- int student::count=0;
-int main() {
- student s1,s2,s3,s4,s5,s6,s7,s8,s9;
- student ::disp();
+struct student{
+    int roll;
+    string name;
+    int cash;
+    
+};
+
+void kim(student & s1){
+        cout<<"enter the value of roll name cash: ";
+        cin>>s1.roll>>s1.name>>s1.cash;
+        cout<<s1.roll<<s1.name<<s1.cash;
+    }
+int main(){
+    tae t1(10,20);
+    
+    t1.dis();
+    student s1;
+    kim(s1);
     return 0;
 }
-
