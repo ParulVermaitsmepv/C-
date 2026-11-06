@@ -1,36 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-class tae{
+class student{
     int a,b;
     public:
-    tae(int x,int y){
-      
-        a=x;
-        b=y;
+    student(int x, int y){
 
-
-    }
-    void dis(){
-        cout<<a<<b;
+    a=x;
+    b=y;
+}
+    void disp(){
+        cout<<"the sum of a and b is :"<<a<<b;
     }
 };
-struct student{
-    int roll;
-    string name;
-    int cash;
-    
-};
-
-void kim(student & s1){
-        cout<<"enter the value of roll name cash: ";
-        cin>>s1.roll>>s1.name>>s1.cash;
-        cout<<s1.roll<<s1.name<<s1.cash;
-    }
 int main(){
-    tae t1(10,20);
-    
-    t1.dis();
-    student s1;
-    kim(s1);
+    int x,y;
+
+        cout<<"enter the value of a and b: ";
+        cin>>x>>y;
+            student s1(x,y);
+    s1.disp();
     return 0;
 }

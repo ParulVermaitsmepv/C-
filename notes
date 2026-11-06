@@ -4,3 +4,9 @@ it must be an instance member function  and can never be static
 constructer is implicilty called when object is created 
 constructer is used to solve the problem of ini
 constructer makes an object to object 
+
+
+
+
+iheritence is the precess of inheritan propertiese and behaviour of existing class 
+into new class exiting class is =  child class or derived class 

@@ -23,6 +23,7 @@ class B{
 void disp (A a1,B b1){
     cout<<"value of x and y is "<<a1.x<<b1.y;
 }
+
 int main(){
     A a;
     B b;
